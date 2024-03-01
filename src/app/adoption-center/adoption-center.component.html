@@ -1,0 +1,68 @@
+
+  <body>
+    <!-- <div class="bg-Container"   style="background-image: url(assets/images/adoptbuddy.jfif);"> -->
+    <div class="main-Container">
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container bottomContainer">
+        <div class="allText bottomText">
+          <p class="text-blk headingText">
+            
+          </p>
+        
+          <header>
+            <h3>Dog Adoption Form</h3>
+          </header>
+        
+          <div class="container">
+        
+            <form>
+              <!-- <label for="name">Your Name:</label> -->
+              <input type="text" id="name" name="name" placeholder="Your Name">
+        
+              <!-- <label for="email">Your Email:</label> -->
+              <input type="email" id="email" name="email" placeholder="Your Email">
+        
+              <!-- <label for="phone">Your Phone Number:</label> -->
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        
+              <!-- <label for="address">Your Address:</label> -->
+              <textarea id="address" name="address" rows="3" placeholder="Your Address" required></textarea>
+        
+              <!-- <label for="dogPreference">Dog Preference:</label> -->
+              <!-- <select id="dogPreference" name="dogPreference" aria-placeholder="Dog Preference">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+         -->
+              Selects:
+              <select>
+                <option> Select </option>
+              @for(s of Selects;track Selects){
+                  <option>{{s}}</option>
+                  }
+            </select>
+
+
+              <!-- <label for="experience">Experience with Dogs:</label>
+              <textarea id="experience" name="experience" rows="4" required></textarea> -->
+        
+              <!-- <label for="reason">Reason for Adoption:</label> -->
+              <textarea id="reason" name="reason" rows="3" placeholder="Reason for Adoption" required></textarea>
+        
+              <button type="submit" onclick=" alert('🐾 Welcome to the Family! Congrats on Adopting Your New Furry Friend! 🐶')">Submit Adoption Form</button>
+            </form>
+        
+          </div>
+
+        </div>
+        <div class="videoContainer">
+          <iframe allowfullscreen="allowfullscreen" class="mainVideo" controls="controls" src="assets\images\pexels_videos_2796080 (2160p).mp4">
+          </iframe>
+          <img class="dotsImg image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/cw3.svg">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- </div>  -->
+  </body>

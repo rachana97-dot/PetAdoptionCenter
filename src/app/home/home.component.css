@@ -1,0 +1,135 @@
+.slider-container {
+  position: relative;
+  width: auto;
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 530px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: left;
+  padding: 20px;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: 'Trebuchet MS';
+  color: rgb(238, 242, 242);
+}
+
+/* Button styling */
+button {
+  background-color: transparent;
+  margin-left: 10%;
+  margin-top: 20px;
+  color: #fff; /* Set the initial text color */
+  border: 2px solid #fff; /* Set the initial border color */
+  padding: 10px 20px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  animation: borderColorChange 4s infinite linear; /* CSS animation for border color change */
+}
+
+/* Keyframes for the animation */
+@keyframes borderColorChange {
+  0% {
+    border-color: #ff6b6b;
+  }
+  25% {
+    border-color: #ffe66d;
+  }
+  50% {
+    border-color: #8aff8a;
+  }
+  75% {
+    border-color: #64b5f6;
+  }
+  100% {
+    border-color: #ff6b6b;
+  }
+}
+
+h6{
+  color: rgb(243, 239, 239);
+  font-weight: normal;
+}
+.slide1 {
+  background-color: #3498db;
+}
+
+.slide2 {
+  background-color: #e74c3c;
+}
+
+.slide3 {
+  background-color: #2ecc71;
+}
+
+/* Auto slide change */
+@keyframes changeSlide {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  16.66% {
+    transform: translateX(0);
+  }
+
+  33.33% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  66.66% {
+    transform: translateX(-200%);
+  }
+
+  83.33% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slides {
+  animation: changeSlide 20s infinite;
+}
+.second-container{
+  background-color: yellowgreen;
+ 
+}
+#new{
+  height: 200p;
+}
